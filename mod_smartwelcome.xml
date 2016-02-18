@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" version="3.1" client="site" method="upgrade">
+<extension type="module" version="3.2.0" client="site" method="upgrade">
 	<name>MOD_SMARTWELCOME</name>
 	<creationDate>Today</creationDate>
 	<author>Non</author>
@@ -25,7 +25,7 @@
 	</languages>
 	<config>
 		<fields name="params">
-			<filedset name="basic">
+			<fieldset name="basic">
 				<field
 					name="visit_count"
 					type="text"
@@ -40,9 +40,9 @@
 					label="MOD_SMARTWELCOME_LABEL"
 					description="MOD_SMARTWELCOME_WELCOME_DESC"
 				/>
-			</filedset>
+			</fieldset>
 			<!-- Tab Advance -->
-			<filedset name="advanced">
+			<fieldset name="advanced">
 				<field
 					name="layout"
 					type="module_layout"
@@ -56,7 +56,7 @@
 					label="COM_MODULES_FIELD_MODULECLASS_SEX_LABEL"
 					description="COM_MODULES_FIELD_MODULECLASS_SEX_DESC"
 				/>
-			</filedset>
+			</fieldset>
 		</fields>
 	</config>
 </extension>
