@@ -11,6 +11,7 @@ defined('_JEXEC') or die;
 
 class NonHelper{
 	
+	// Function เชคการ show จาก cookie ถ้า cookie Run ครบจำนวนก็จะไม่โชว Alert Bar
 	public static function show($params){
 
 		$app = JFactory::getApplication();

@@ -42,10 +42,11 @@
 				/>
 			</fieldset>
 			<!-- Tab Advance -->
+			<!-- //Type แบบให้เลือก layout -->
 			<fieldset name="advanced">
 				<field
 					name="layout"
-					type="module_layout"
+					type="modulelayout"
 					label="JFIELD_ALT_LAYOUT_LABEL"
 					description="JFIELD_ALT_LAYOUT_DESC"
 				/>

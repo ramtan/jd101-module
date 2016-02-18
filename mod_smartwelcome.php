@@ -10,8 +10,9 @@
 defined('_JEXEC') or die;
 
 //include the helper file
-require_once __DIR__.'helper/helper.php';
+require_once __DIR__.'/helper/helper.php';
 
+// เรียกใช้ Function show โดยส่ง  $params ไป
 $show = NonHelper::show($params);
 
 if($show){
