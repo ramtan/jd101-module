@@ -12,7 +12,7 @@ defined('_JEXEC') or die;
 //include the helper file
 require_once __DIR__.'helper/helper.php';
 
-$show = ModSmartWelcomeHelper::show($params);
+$show = NonHelper::show($params);
 
 if($show){
 	//สั่ง joomla ให้ค้น laypout ที่ mod_smartwelcome และดูค่าที่ผู้ใช้เลือกว่าเป็น layout อะไร
