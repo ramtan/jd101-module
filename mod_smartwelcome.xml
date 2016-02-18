@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>MOD_SMARTWELCOME</name>
+	<creationDate>Today</creationDate>
+	<author>Non</author>
+	<authorEmail>Non@non.com</authorEmail>
+	<authorUrl>http://www.Nnon.org</authorUrl>
+	<copyright>Copyright Info</copyright>
+	<license>License Info</license>
+	<!--  The version string is recorded in the components table -->
+	<version>1.0.0</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>MOD_SMARTWELCOME_XML_DESCRIPTION</description>
+
+	<files>
+		<filename module="mod_smartwelcome">mod_smartwelcome.php</filename>
+		<folder>helper</folder>
+		<folder>tmpl</folder>
+		<filename>index.html</filename>
+		<filename>mod_smartwelcome.xml</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB.mod_smartwelcome.ini</language>
+		<language tag="en-GB">language/en-GB.mod_smartwelcome.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<filedset name="basic">
+				<field
+					name="visit_count"
+					type="text"
+					default="0"
+					label="MOD_SMARTWELCOME_VISITCOUNT_LABEL"
+					description="MOD_SMARTWELCOME_VISITCOUNT_DESC"
+				/>
+				<field
+					name="welcome_message"
+					type="textarea"
+					default="MOD_SMARTWELCOME_DEFAULT_MESSAGE"
+					label="MOD_SMARTWELCOME_LABEL"
+					description="MOD_SMARTWELCOME_WELCOME_DESC"
+				/>
+			</filedset>
+			<!-- Tab Advance -->
+			<filedset name="advanced">
+				<field
+					name="layout"
+					type="module_layout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_LAYOUT_DESC"
+				/>
+				<field
+					name="moduleclass_sfx"
+					type="textarea"
+					rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SEX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SEX_DESC"
+				/>
+			</filedset>
+		</fields>
+	</config>
+</extension>
